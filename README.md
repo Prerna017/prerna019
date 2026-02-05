@@ -116,5 +116,6 @@
 > "Code. Learn. Build. Repeat."
 
 ---
-
+<p align="center"> <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=prerna017&theme=tokyonight"/> </p>
+<p align="center"> <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" width="120"/> </p>
 ⭐ From [Prerna Tyagi](https://github.com/prerna017)
