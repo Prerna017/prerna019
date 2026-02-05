@@ -118,4 +118,33 @@
 ---
 <p align="center"> <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=prerna017&theme=tokyonight"/> </p>
 <p align="center"> <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" width="120"/> </p>
+
+
+
+```yaml
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: prerna017
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ⭐ From [Prerna Tyagi](https://github.com/prerna017)
